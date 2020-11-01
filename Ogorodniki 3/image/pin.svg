@@ -1,0 +1,24 @@
+<svg id="ico" xmlns="http://www.w3.org/2000/svg" width="22.19" height="30.938" viewBox="0 0 22.19 30.938">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-opacity: 0;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <path id="Clip_4" data-name="Clip 4" class="cls-1" d="M3221,260.541h22.2v30.943H3221V260.541h0Z" transform="translate(-3221 -260.531)"/>
+    <g id="Mask_by_Clip_4" data-name="Mask by Clip 4">
+      <path id="Fill_3" data-name="Fill 3" class="cls-2" d="M3240.94,271.132c0,8.429-6.57,15.561-8.84,17.774-2.27-2.213-8.84-9.345-8.84-17.774a8.85,8.85,0,0,1,17.68,0m-9.6,20.07a1.165,1.165,0,0,0,1.52,0c0.03-.025,10.34-8.951,10.34-20.07a11.112,11.112,0,0,0-22.2,0c0,11.119,10.31,20.044,10.34,20.07" transform="translate(-3221 -260.531)"/>
+      <path id="Fill_1" data-name="Fill 1" class="cls-2" d="M3231.84,274.216a3.067,3.067,0,1,0-3.17-3.066,3.111,3.111,0,0,0,3.17,3.066m0,2.182a5.25,5.25,0,1,1,5.42-5.248,5.332,5.332,0,0,1-5.42,5.248" transform="translate(-3221 -260.531)"/>
+    </g>
+  </g>
+</svg>
