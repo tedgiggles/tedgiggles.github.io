@@ -1,0 +1,25 @@
+.cards__year {
+  display: none;
+  flex-direction: column;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.cards__item_city {
+  min-height: 200px;
+}
+
+.card__year-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.quantity-peoples {
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 18px;
+}

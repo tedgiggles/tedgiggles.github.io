@@ -1,0 +1,633 @@
+.modal-map {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../image/map-shops.jpg') center/cover no-repeat;
+
+  &__close {
+    top: 20px;
+    right: 20px;
+    background-image: url('../image/cross.svg');
+  }
+
+
+  &_factory {
+    background: url('../image/bg-factory.jpg') center/cover no-repeat;
+  }
+
+  &_city {
+    background: url('../image/city-map.jpg') center/100% 105% no-repeat !important;
+  }
+}
+
+.map-pins {
+
+
+  &__item {
+    width: 30%;
+    position: absolute;
+    top: 24%;
+    left: 46%;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    &:nth-child(2) {
+      top: 51%;
+      left: 20%;
+    }
+
+    &:nth-child(3) {
+      top: 26%;
+      left: 44%;
+    }
+
+    &:nth-child(4) {
+      top: 46%;
+      left: 36%;
+    }
+
+    &:nth-child(5) {
+      top: 69%;
+      left: 73%;
+    }
+
+    &:nth-child(6) {
+      top: 42%;
+      left: 37%;
+    }
+
+    &:nth-child(7) {
+      top: 63%;
+      left: 79%;
+    }
+
+    &:nth-child(8) {
+      top: 50%;
+      left: 38%;
+    }
+
+    &:nth-child(9) {
+      top: 66%;
+      left: 74%;
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+    }
+
+    &_factory {
+      top: 27%;
+      left: 39%;
+
+      &:nth-child(2) {
+        top: 44%;
+        left: 14%;
+      }
+
+      &:nth-child(3) {
+        top: 40%;
+        left: 16%;
+      }
+
+      &:nth-child(4) {
+        top: 7%;
+        left: 7%;
+      }
+
+      &:nth-child(5) {
+        top: 77%;
+        left: 81%;
+
+        .map-pins__card {
+          left: -120px;
+        }
+      }
+
+      &:nth-child(6) {
+        top: 78%;
+        left: 79%;
+
+        .map-pins__card {
+          left: -120px;
+        }
+      }
+    }
+  }
+
+  &__card {
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    z-index: 3;
+    bottom: 40px;
+    left: 0;
+    display: none;
+    overflow: hidden;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(#000000, 0.6);
+
+    &_4 {
+      bottom: -153px !important;
+    }
+  }
+
+
+  &__close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url('../image/cross.svg') center / 10px 10px no-repeat;
+    background-color: #fff;
+  }
+
+  &__img {
+    height: 125px;
+    background-image: url('../image/shop-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &_2 {
+      background-image: url('../image/shop-2.jpg');
+    }
+
+    &_3 {
+      background-image: url('../image/shop-3.jpg');
+    }
+
+    &_4 {
+      background-image: url('../image/shop-4.jpg');
+    }
+
+    &_5 {
+      background-image: url('../image/shop-5.jpg');
+    }
+
+    &_6 {
+      background-image: url('../image/shop-6.jpeg');
+    }
+
+    &_7 {
+      background-image: url('../image/shop-7.jpg');
+    }
+
+    &_8 {
+      background-image: url('../image/shop-8.jpg');
+    }
+
+    &_9 {
+      background-image: url('../image/shop-9.jpg');
+    }
+  }
+
+  &__descr {
+    padding: 15px 30px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+  }
+
+  &__title {
+    margin-bottom: 7px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__addres {
+    margin-bottom: 7px;
+    font-size: 18px;
+    color: #469620;
+    line-height: 22px;
+    font-style: normal;
+  }
+}
+
+.modal-map.open {
+  display: block !important;
+}
+
+
+.map-pins__card.open {
+  display: block;
+}
+
+
+.map-pins__card.hide {
+  display: none;
+}
+
+
+.modal-btn {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background-color: #fff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 25px;
+  box-shadow: 0 10px 20px rgba(#000000, 0.6);
+  cursor: pointer;
+}
+
+.small {
+  max-width: 350px !important;
+}
+
+
+.map-pins__img_factory {
+  background-image: url('../image/factory-1.jpg');
+
+  &-2 {
+    background-image: url('../image/factory-2.jpg');
+  }
+
+  &-3 {
+    background-image: url('../image/factory-3_4.jpg');
+  }
+
+  &-4 {
+    background-image: url('../image/factory-3_4.jpg');
+  }
+
+  &-5 {
+    background-image: url('../image/factory-5_6.png');
+  }
+
+  &-6 {
+    background-image: url('../image/factory-5_6.png');
+  }
+}
+
+.modal-info {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-info.open {
+  display: block;
+}
+
+.modal-info__dialog {
+  margin: 5% auto;
+  width: 80%;
+}
+
+
+.modal-info__content {
+  position: relative;
+  padding: 45px;
+  display: flex;
+  background-color: #fff;
+  color: #000;
+}
+
+
+.modal-info__close {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+  width: 34px;
+  height: 34px;
+  background: url('../image/cross.svg') center/cover no-repeat;
+  cursor: pointer;
+}
+
+.modal-info__img {
+  margin-right: 40px;
+  width: 50%;
+  height: 720px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.modal-info__descr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+
+  p {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+
+.modal-info__title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.modal-info__addres {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-style: normal;
+  color: #469620;
+  line-height: 1.2;
+}
+
+
+.modal-info__btn {
+  position: static;
+  transform: none;
+  padding: 10px 20px;
+}
+
+.map-pins__item_city {
+  display: none;
+}
+
+.map-pins__item_city.open {
+  display: block !important;
+}
+
+.map-pins__item_city {
+
+  &-1 {
+    top: 37% !important;
+    left: 30% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Вінниця.jpg');
+    }
+  }
+
+  &-2 {
+    top: 48% !important;
+    left: 62% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Дніпро.jpg');
+    }
+  }
+
+  &-3 {
+    top: 56% !important;
+    left: 62% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Запоріжжя.jpg');
+    }
+  }
+
+  &-4 {
+    top: 20% !important;
+    left: 40% !important;
+
+    .map-pins__card {
+      bottom: -45px;
+      left: 33px;
+    }
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Киев.jpg');
+    }
+  }
+
+  &-5 {
+    top: 46% !important;
+    left: 82% !important;
+
+    .map-pins__card {
+      max-width: 352px;
+      left: -146px;
+    }
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Луганськ.jpg');
+    }
+  }
+
+  &-6 {
+    top: 67% !important;
+    left: 47% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Миколаїв.jpg');
+    }
+  }
+
+  &-7 {
+    top: 73% !important;
+    left: 41% !important;
+ 
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Одеса.jpg');
+    }
+  }
+
+  &-8 {
+    top: 32% !important;
+    left: 60% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Полтава.jpg');
+    }
+  }
+
+  &-9 {
+    top: 35% !important;
+    left: 23% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/хмельницький.jpg');
+    }
+  }
+
+  &-10 {
+    top: 53% !important;
+    left: 75% !important;
+
+    .map-pins__card {
+      max-width: 370px;
+      left: -100px;
+    }
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/донецьк.jpg');
+    }
+  }
+
+  &-11 {
+    top: 14% !important;
+    left: 61% !important;
+
+    .map-pins__card {
+      bottom: -100px;
+      left: 35px;
+    }
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Суми.jpg');
+    }
+  }
+
+  &-12 {
+    top: 26% !important;
+    left: 68% !important;
+
+    .map-pins__card {
+      bottom: -20px;
+      max-width: 400px;
+    }
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Харків.jpg');
+    }
+  }
+
+  &-13 {
+    top: 72% !important;
+    left: 50% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Херсон.jpg');
+    }
+  }
+
+  &-14 {
+    top: 34% !important;
+    left: 48% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Черкаси.jpg');
+    }
+  }
+
+  &-15 {
+    top: 7% !important;
+    left: 44% !important;
+
+    .map-pins__card {
+      bottom: -140px !important;
+    }
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/чернігів.jpg');
+    }
+  }
+
+  &-16 {
+    top: 19% !important;
+    left: 15% !important;
+
+    .map-pins__card {
+      bottom: -180px;
+    }
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Луцьк.jpg');
+    }
+  }
+
+  &-17 {
+    top: 19% !important;
+    left: 20% !important;
+
+    .map-pins__card {
+      bottom: -100px;
+    }
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Рівне.jpg');
+    }
+  }
+
+  &-18 {
+    top: 93% !important;
+    left: 55% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/севастополь.jpg');
+    }
+  }
+
+  &-19 {
+    top: 87% !important;
+    left: 53% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Євпаторія.jpg');
+    }
+  }
+
+  &-20 {
+    top: 91% !important;
+    left: 57% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Бахчисарай.jpg');
+    }
+  }
+
+  &-21 {
+    top: 30% !important;
+    left: 9% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Львів.jpg');
+    }
+  }
+
+  &-22 {
+    top: 41% !important;
+    left: 12% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Івано-франківськ.jpg');
+    }
+  }
+
+  &-23 {
+    top: 33% !important;
+    left: 17% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Тернопіль.png');
+    }
+  }
+
+  &-24 {
+    top: 48% !important;
+    left: 3% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Мукачево.jpg');
+    }
+  }
+
+  &-25 {
+    top: 42% !important;
+    left: 3% !important;
+
+    .map-pins__card .map-pins__img {
+      background-image: url('../image/Ужгород.jpg');
+    }
+  }
+}
