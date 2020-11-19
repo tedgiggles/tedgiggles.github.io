@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+     <meta charset='UTF-8'>
+    <title>Computer</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<header> 
+
+<div class="logo">
+<a href="index.html"><img class="graficlogo" src="img/logo.png" alt="Logo"></a>
+
+</div>
+<nav class="topnav" id="myTopnav">
+
+<a id="menu" href="#" class="icon">&#9776</a>
+</nav>
+</header>
+<br><br>
+
+
+
+<table id="table1">
+<tr>
+  <th>Название</th>
+  <th>Описание услуги</th>
+  <th>Цена</th>
+  </tr>
+  <tr>
+    <td><b>Выездная диагностика</b></td>
+    <td>Бесплатная диагностика вашего <br> ПК для установки проблем с <br>вашим компьютером </td>
+    <td>0грн</td>
+  </tr>
+ <tr>
+  <td><b>Установка ОС</b></td>
+  <td>Установка операционной системы.<br> Мы устанавливаем основные дистрибутивы<br>  Linux: Ubuntu, Mint, Arch, Debian <br> а также Windows 7,10 <br> (все версии Pro, Home, Enterprise).
+  </td>
+  <td>от 150грн</td>
+
+ </tr>
+
+<tr>
+  <td><b>Установка драйверов</b></td>
+  <td>Установка различных драйверов <br> под вашу систему</td>
+  <td>20грн</td>
+
+</tr>
+<tr>
+  <td><b>Установка программ и игр</b></td>
+  <td> Установка всех программ: Adobe Photoshop,<br> Microsoft Word, установка пиратских игр</td>
+  <td>от 40грн</td>
+
+</tr>
+<tr>
+  <td ><b>Защита от вирусов</b></td>
+  <td> Удаление различных вирусов: майнеров, стиллеров,<br> реклманых вирусов, вирусов-шпионов и тд.<br>  А так же установка мощного лицензионного<br>  антивируса на ваш компьютер и бразуер</td>
+  <td>от 100грн</td>
+
+</tr>
+<tr>
+  <td><b>Сборка ПК</td>
+  <td>Профессиональная сборка ПК, <br>с кабель-менеджментом и гарантией</td>
+  <td>от 300грн</td>
+</tr>
+  <td><b>Подбор комплектующих</b></td>
+  <td>Подбор комплектующих на любой бюджет, <br>качественный подбор всего железа <br>для лучшей работы в связке </td>
+  <td>200грн</td>
+</tr>
+</table>
+</p>
+<br><br><br><br>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
+ 
